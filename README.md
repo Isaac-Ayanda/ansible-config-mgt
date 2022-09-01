@@ -1,2 +1,2 @@
 # ansible-config-mgt
-Test by making some change in README.md
+Testing by making some change in README.md
