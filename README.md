@@ -1,2 +1,2 @@
 # ansible-config-mgt
-Testing webhook configuration by making some change in README.md
+Testing configuration by making some change in README.md
