@@ -1,0 +1,8 @@
+---
+# defaults file for nginxRole
+enable_nginx_lb: fales
+load_balancer_is_required: fales
+
+# IP mapping for webservers
+webserver1: 172.31.26.121
+webserver2: 172.31.27.174
