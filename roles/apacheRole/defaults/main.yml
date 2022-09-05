@@ -4,5 +4,5 @@ enable_apache_lb: false
 loadbalancer_is_required: false
 
 # DNS mapping for webserver
-webserver1: "172.31.94.94"
-webserver2: "172.31.95.245"
+webserver1: "172.31.93.80"
+webserver2: "172.31.82.20"
