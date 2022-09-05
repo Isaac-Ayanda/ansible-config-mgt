@@ -1,5 +1,4 @@
 ---
-
 - name: Install nginx
   become: yes
   apt:
@@ -9,6 +8,7 @@
 
 
 - name: start nginx
+  yum: name=nginx state=latest
   become: yes
   service:
     name: nginx
