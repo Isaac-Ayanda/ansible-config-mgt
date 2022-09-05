@@ -6,8 +6,8 @@
   tags:
     - always
 
-# - name: Install wireshark
-#   import_playbook: ../static-assignments/common.yml     
+- name: Install wireshark
+  import_playbook: ../static-assignments/common.yml     
 
 - name: Webserver assignment
   import_playbook: ../static-assignments/webservers.yml
