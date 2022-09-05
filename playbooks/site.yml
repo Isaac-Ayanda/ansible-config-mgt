@@ -7,11 +7,11 @@
   tags:
     - always
 
+
 - hosts: webservers
 - name: Webserver assignment
   import_playbook: ../static-assignments/webservers.yml
----
-- hosts: all
+
 
 - name: Include dynamic variables 
   import_playbook: ../static-assignments/common.yml 
@@ -22,8 +22,6 @@
 - name: Delete wireshark installation
   import_playbook: ../static-assignments/common-del.yml
 
-- name: Webserver assignment
-  import_playbook: ../static-assignments/webservers.yml
 
 - name: Loadbalancers assignment
   import_playbook: ../static-assignments/loadbalancers.yml
