@@ -1,16 +1,9 @@
 ---
-# - name: restart apache
-#   become: yes
-#   service:
-#     name: "{{ apache_service }}"
-#     state: "{{ apache_restart_state }}"
-- name: Enable required Apache2 Modules
+- name: Restart apache2 service
+  become_method: sudo  
   become: yes
-  shell: |
-    a2enmod rewrite
-    a2enmod proxy
-    a2enmod proxy_balancer
-    a2enmod proxy_http
-    a2enmod headers
-    a2enmod lbmethod_bytraffic
-  notify: Restart apache2 service    
+  service:
+    name: apache2
+    state: restarted
+
+        

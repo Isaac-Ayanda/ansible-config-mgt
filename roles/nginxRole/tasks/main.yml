@@ -1,12 +1,13 @@
 ---
+
 - name: Install nginx
   become: yes
   apt:
     name: nginx
     state: present
-    update_cache: yes
+    update_cache: true
 
-
+ 
 
 - name: Insert configuration file in server block
   become: yes
@@ -23,4 +24,4 @@
      regexp: '(.*enabled.*)'
      replace: '#\1'
          
-  # notify: start nginx service
+  notify: Start nginx service
