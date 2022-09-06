@@ -5,7 +5,7 @@
   apt:
     name: nginx
     state: present
-    update_cache: true
+    update_cache: yes
 
  
 
@@ -24,4 +24,4 @@
      regexp: '(.*enabled.*)'
      replace: '#\1'
          
-  notify: Start nginx service
+  # notify: Start nginx service
